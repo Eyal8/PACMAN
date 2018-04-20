@@ -1,0 +1,342 @@
+/*******General*****************/
+@font-face {
+  font-family: "pacfont";
+  src: url("/resources/font/PacFont_Good.ttf") format("truetype") ;
+}
+
+@media screen and (min-width:1366px) and (min-height:768px) {
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Agency FB";
+  background: #efefef;
+  background-image: url("resources/connect_@2X.png");
+}
+.content{
+  background: #9053c7;
+  background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  border-radius: 15px;
+  width:1200px;
+  height:750px;
+  margin: 0 auto;
+  padding: 30px;
+  font-size:18px;
+}
+/*******Header section**********/
+#header{
+  width:100px;
+  position: fixed;
+  padding:20px;
+
+}
+#logo{
+  width:450%;
+  height:450%
+
+}
+/***********Menu section**********/
+#topnav
+{
+  z-index: 999;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+  height: 45px;
+  line-height: 45px;
+  background: white;
+  overflow: hidden;
+  list-style-type: none;
+  margin: auto;
+  width:70%;
+  background: #9053c7;
+  background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  border-radius: 12px;
+}
+
+#topnav li{
+  float: left;
+  width:25%;
+  font-weight:bold;
+  padding-top: 10px;
+}
+#topnav li a{
+  font-size: 18px;
+  display: block;
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+  bottom: 15px;
+}
+#topnav li a:hover{
+  background-color: rgba(222,30,55,0.9);
+}
+
+/***********Content section************/
+
+.welcomeButton{
+  font-family: "Agency FB";
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 auto;
+  width: 40%;
+  height: 70px;
+  border-radius: 15px;
+  background: rgba(200,40,60,0.9);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.welcomeButton:hover{
+  background: #333333;
+}
+#welcome{
+}
+#about{
+}
+#myModal{
+}
+#game{
+  margin: 0 auto;
+  width: 60%;
+  font-size:30px;
+padding-left:50px;
+}
+#canvas{
+  padding-right:250px;
+  position:relative;
+}
+#logo2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:250px;
+  height:100px;
+}
+
+/********** Registration ********/
+#register{
+}
+#register-form{
+  font-size: 16px;
+  color:black;
+  width:70%;
+}
+.form-control{
+  border-radius: 10px;
+  font-size:18px;
+  color:#333;
+  display: inline;
+
+}
+.col-6{
+  width: 100%;
+  margin: 0 auto;
+  display:inline;
+  padding: 25px;
+}
+.col-12{
+  width: 100%;
+  margin: 0 auto;
+  padding: 25px;
+}
+.col-6 input{
+  width: 45%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline;
+  border: none;
+  background: #f1f1f1;
+}
+.col-12 input{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline;
+  border: none;
+  background: #f1f1f1;
+}
+
+input:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Extra styles for the cancel button */
+#resetButton {
+  background-color: rgba(180, 40, 260, 0.9);
+}
+.regFormButton{
+  font-family: "Agency FB";
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 10px auto;
+  width: 40%;
+  height: 70px;
+  border-radius: 15px;
+  background: rgba(200,40,60,0.9);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.regFormButton:hover{
+  background: #333333;
+  cursor: pointer;
+}
+
+#submit-button{
+  background-color: rgba(85, 188, 200, 0.9);
+}
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+/*************Game screen *************/
+
+#canvas{
+  margin: 40px;
+  left: 10%;
+  font-size: 20px;
+  font-weight:bold;
+}
+#container{
+  float:right;
+  width:100px;
+}
+.gamelbl{
+  display: inline-flex;
+  left: 200px;
+  font-family: "Agency FB";
+  width: 15%;
+  padding-left: 10px;
+  margin: 5px;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight:bold;
+  left: 200px;
+  text-align:center;
+  color:black;
+}
+
+#gameLabels{
+  margin: 0 auto;
+  width:650px;
+  font-size: 18px;
+  font-weight:bold;
+
+}
+.gameSpan{
+padding:10px;
+  font-size: 18px;
+  font-weight:bold;
+  color:black;
+}
+#startGameForm{
+  fonst-size:18px;
+  font-weight:bold;
+  padding-left:100px;
+  padding-top:20px;
+}
+
+#gameSettings {
+
+}
+#gameSetting{
+  text-align: center;
+}
+.settings{
+}
+.form-group{
+}
+#selectNumOfGhosts{
+  border-radius:30px;
+}
+#pacimg{
+  float:right;
+  right:100px;
+  height:500px;
+  width:500px;
+}
+#startGameButton{
+  background-color:yellow;
+  margin-top: 100px;
+  color:#444;
+}
+
+.box {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border: 2px solid;
+}
+
+/********Footer section **********/
+#footer{
+  z-index:99;
+  opacity:0.7;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height:90px;
+  background-color: darkturquoise;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+#footer:hover{
+  opacity:1;
+}
